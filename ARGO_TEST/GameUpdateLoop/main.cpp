@@ -37,7 +37,8 @@ int main(void)
 
 	const Value& tilesetsArray = d["tilesets"];
 	const Value& tilesets = tilesetsArray[0u];
-	const char* textureName = tilesets["name"].GetString();
+	string textureName = tilesets["name"].GetString();
+
 	int tileWidth = tilesets["tilewidth"].GetInt();
 	int tileHeight = tilesets["tileheight"].GetInt();
 

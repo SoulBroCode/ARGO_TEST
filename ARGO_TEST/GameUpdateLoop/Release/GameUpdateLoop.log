@@ -1,0 +1,17 @@
+﻿  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\sdfs.txt
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\sad.json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\sad.txt
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\test..json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\test.json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\texture\wall.png
+  6 File(s) copied
+  main.cpp
+main.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+  C:\Program Files (x86)\Windows Kits\10\Include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
+  Generating code
+  0 of 308 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    7 functions had inline decision re-evaluated but remain unchanged
+  Finished generating code
+  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\Release\GameUpdateLoop.exe
+  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\Release\GameUpdateLoop.pdb (Full PDB)

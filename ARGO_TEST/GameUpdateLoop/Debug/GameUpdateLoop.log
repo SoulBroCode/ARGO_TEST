@@ -1,5 +1,12 @@
-﻿  main.cpp
-c:\users\linh\desktop\gameupdateloop\gameupdateloop\main.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+﻿  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\sdfs.txt
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\sad.json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\sad.txt
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\test..json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\json\test.json
+  C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\GameUpdateLoop\dependencies\media\texture\wall.png
+  6 File(s) copied
+  main.cpp
+c:\users\linh\desktop\argo_test\argo_test\gameupdateloop\main.cpp(15): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
   c:\program files (x86)\windows kits\10\include\10.0.10240.0\ucrt\stdio.h(205): note: see declaration of 'fopen'
-  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\GameUpdateLoop\Debug\GameUpdateLoop.exe
-  GameUpdateLoop.vcxproj -> C:\Users\Linh\Desktop\GameUpdateLoop\Debug\GameUpdateLoop.pdb (Full PDB)
+  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\Debug\GameUpdateLoop.exe
+  GameUpdateLoop.vcxproj -> C:\Users\linh\Desktop\ARGO_TEST\ARGO_TEST\Debug\GameUpdateLoop.pdb (Full PDB)
