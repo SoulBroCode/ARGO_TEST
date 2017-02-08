@@ -1,0 +1,125 @@
+SDL_SetRenderDrawColor(_renderer, 255, 0, 0, 255);
+	///////////////////use this code for testing purpose///////////////////////////////////////////////////////////////
+	Camera cam = _cameraSystem.getCamera();
+	for (b2Body* BodyIterator = _world.GetBodyList(); BodyIterator != 0; BodyIterator = BodyIterator->GetNext())
+	{
+		if (BodyIterator->IsActive())
+		{
+			for (b2Fixture* b2Fixture = BodyIterator->GetFixtureList(); b2Fixture != 0; b2Fixture = b2Fixture->GetNext())
+			{
+
+				b2Shape::Type shapeType = b2Fixture->GetType();
+				if (shapeType == b2Shape::e_circle)
+				{
+				}
+				else if (shapeType == b2Shape::e_polygon)
+				{
+					b2PolygonShape* polygonShape = (b2PolygonShape*)b2Fixture->GetShape();
+
+					int lenght = (int)polygonShape->GetVertexCount();
+
+					SDL_Point* points = new SDL_Point[lenght + 1];
+
+
+					for (int i = 0; i < lenght; i++)
+					{	
+						Point worldPoint;
+						float verticesPosX = polygonShape->GetVertex(i).x; b2Fixture->GetBody()->GetPosition().x;
+						float verticesPosY = polygonShape->GetVertex(i).y; b2Fixture->GetBody()->GetPosition().y;
+						/*
+						float mag = sqrt(fixturePosX * fixturePosX + fixturePosY * fixturePosY);
+						if (mag != 0)
+						{
+							fixturePosX /= mag;
+							fixturePosY /= mag;
+						}*/
+						float angle = b2Fixture->GetBody()->GetAngle();
+						float s = sin(angle);
+						float c = cos(angle);
+						
+						// translate point back to origin:
+						verticesPosX -= 0;
+						verticesPosY -= 0;
+
+						// rotate point
+						float xnew = verticesPosX* c - verticesPosY * s;
+						float ynew = verticesPosX * s + verticesPosY * c;
+
+						// translate point back:
+						verticesPosX = xnew + 0;
+						verticesPosY = ynew + 0;
+
+						worldPoint.x = verticesPosX + b2Fixture->GetBody()->GetPosition().x;;
+						worldPoint.y = verticesPosY + b2Fixture->GetBody()->GetPosition().y;;
+						worldPoint = cam.worldToScreen(worldPoint);
+						points[i].x = worldPoint.x;
+						points[i].y = worldPoint.y;
+					}
+
+					points[lenght].y = points[0].y;
+					points[lenght].x = points[0].x;
+
+
+
+					SDL_RenderDrawLines(_renderer, points, lenght+1);
+				}
+			}
+		}
+	}
+
+
+
+
+/*
+	Entity layer
+	*/
+	const Value& entitylayer = layerArray[1];
+
+	const Value& entityDataArray = entitylayer["objects"];
+
+	for (int i = 0; i < entityDataArray.Size(); i++)
+	{
+		const Value& entity = entityDataArray[i];
+		string entityType = entity["name"].GetString();
+		float x = entity["x"].GetFloat();
+		float y = entity["y"].GetFloat();
+		float w = entity["width"].GetFloat();
+		float h = entity["height"].GetFloat();
+		if (entityType == "checkpoint")
+		{
+			entities.push_back(factory.CreateWall(_textureHolder[TextureID::EntitySpriteSheet],
+				SDL_Rect{ 1 * tileWidth, 0, tileWidth, tileHeight },
+				SDL_Rect{ (int)x, (int)y , (int)w, (int)h }));
+		}
+		else if (entityType == "wallpoly")
+		{
+			const Value& entityPolyArray = entity["polygon"];
+			int count = entityPolyArray.Size();
+			b2Vec2* vectices = new b2Vec2[count];
+			for (int i = 0; i < count; i++)
+			{
+				const Value& entityPoly = entityPolyArray[i];
+				vectices[i].Set(entityPoly["x"].GetFloat() , entityPoly["y"].GetFloat());
+			}
+			b2Body* test = factory.CreatePolyBody(b2World,x, y, vectices, count);
+		}
+		else if (entityType == "wall")
+		{
+			entities.push_back(factory.CreateWall(_textureHolder[TextureID::EntitySpriteSheet],
+				SDL_Rect{ 2 * tileWidth, 0, tileWidth, tileHeight },
+				SDL_Rect{ (int)x, (int)y , (int)w, (int)h }));
+			//b2Body* test = factory.CreateBoxBody(b2World, x , y , w, h);
+		}
+		else if (entityType == "flag")
+		{
+			entities.push_back(factory.CreateWall(_textureHolder[TextureID::EntitySpriteSheet],
+				SDL_Rect{ 0 * tileWidth, 0, tileWidth, tileHeight },
+				SDL_Rect{ (int)x, (int)y , (int)w, (int)h }));
+		}
+		else
+		{
+			std::cout << "LOADING ERROR" << std::endl;
+		}
+		renderSystem.AddEntity(entities.back()); //for debugging
+	}
+
