@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="64" nextobjectid="36">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="64" nextobjectid="37">
  <tileset firstgid="1" name="backgroundSpritesheet" tilewidth="64" tileheight="64" tilecount="3" columns="3">
   <image source="../backgroundSpritesheet.png" width="192" height="64"/>
  </tileset>
@@ -62,29 +62,29 @@
   <object id="4" name="checkpoint" type="3" x="2820" y="960" width="244" height="448"/>
   <object id="10" name="checkpoint" type="2" x="1409.09" y="2054.55" width="442.424" height="242.424"/>
   <object id="12" name="checkpoint" type="4" x="127.273" y="830.303" width="190.909" height="318.182"/>
-  <object id="16" name="wall" x="1796.97" y="836.364" width="309.091" height="175.758"/>
-  <object id="17" name="wall" x="2372.73" y="1284.85" width="115.152" height="115.152"/>
-  <object id="18" name="wall" x="900" y="1921.21" width="315.152" height="187.879"/>
-  <object id="20" name="wall" x="1160.61" y="2636.36" width="433.333" height="178.788"/>
-  <object id="22" name="wall" x="2687.88" y="1606.06" width="187.879" height="245.455"/>
-  <object id="24" name="wall" x="1924.24" y="2754.55" width="312.121" height="181.818"/>
+  <object id="16" name="colliderBox" x="1796.97" y="836.364" width="309.091" height="175.758"/>
+  <object id="17" name="colliderBox" x="2372.73" y="1284.85" width="115.152" height="115.152"/>
+  <object id="18" name="colliderBox" x="900" y="1921.21" width="315.152" height="187.879"/>
+  <object id="20" name="colliderBox" x="1160.61" y="2636.36" width="433.333" height="178.788"/>
+  <object id="22" name="colliderBox" x="2687.88" y="1606.06" width="187.879" height="245.455"/>
+  <object id="24" name="colliderBox" x="1924.24" y="2754.55" width="312.121" height="181.818"/>
   <object id="25" name="flag" x="1600" y="1600" width="64" height="64"/>
-  <object id="30" name="wall" x="408.302" y="438.566">
+  <object id="30" name="colliderPoly" x="408.302" y="438.566">
    <polygon points="0,0 -8.30189,-260.377 282.264,-290.566 639.245,-196.226 871.698,-45.283 464.906,75.4717 124.528,109.434"/>
   </object>
-  <object id="31" x="680" y="944">
+  <object id="31" name="colliderPoly" x="680" y="944">
    <polygon points="0,0 464,-16 644,416 228,540 -92,588 -188,268"/>
   </object>
-  <object id="32" x="216" y="2200">
+  <object id="32" name="colliderPoly" x="216" y="2200">
    <polygon points="0,0 436,68 624,512 280,672 -56,504 -80,144"/>
   </object>
-  <object id="33" x="2168" y="1744">
+  <object id="33" name="colliderPoly" x="2168" y="1744">
    <polygon points="0,0 332,124 372,344 204,468 -56,268"/>
   </object>
-  <object id="34" x="2652" y="2488">
+  <object id="34" name="colliderPoly" x="2652" y="2488">
    <polygon points="0,0 328,-12 516,228 432,448 168,520 -72,352 -112,196"/>
   </object>
-  <object id="35" x="2716" y="124">
+  <object id="35" name="colliderPoly" x="2716" y="124">
    <polygon points="0,0 316,36 408,340 288,460 84,532 -92,264"/>
   </object>
  </objectgroup>
