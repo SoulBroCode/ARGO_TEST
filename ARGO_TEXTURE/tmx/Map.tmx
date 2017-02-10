@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="64" nextobjectid="141">
+<map version="1.0" orientation="orthogonal" renderorder="right-down" width="50" height="50" tilewidth="64" tileheight="64" nextobjectid="188">
  <tileset firstgid="1" name="backgroundSpritesheet" tilewidth="64" tileheight="64" tilecount="4" columns="4">
   <image source="../backgroundSpritesheet.png" width="256" height="64"/>
  </tileset>
@@ -60,7 +60,7 @@
  <objectgroup color="#55ff00" name="Entities">
   <object id="131" name="Checkpoint" type="2" x="1006.06" y="2772.73" width="348.485" height="257.576"/>
   <object id="132" name="Checkpoint" type="1" x="260.606" y="1439.39" width="227.273" height="272.727"/>
-  <object id="133" name="Checkpoint" type="4" x="1442.42" y="139.394" width="512.121" height="345.455"/>
+  <object id="133" name="Checkpoint" type="4" x="1530.42" y="163.394" width="264.121" height="257.455"/>
   <object id="134" name="Checkpoint" type="3" x="2815.15" y="1015.15" width="230.303" height="357.576"/>
   <object id="135" name="Flag" x="1888" y="1456" width="64" height="64"/>
   <object id="136" name="PlayerSolo" x="378.061" y="325.333" width="64" height="64"/>
@@ -111,18 +111,12 @@
   <object id="123" x="1230" y="2880" width="40" height="40"/>
   <object id="124" x="1544" y="2934" width="40" height="40"/>
  </objectgroup>
- <objectgroup color="#ff0000" name="Collider">
-  <object id="37" name="Poly" x="388" y="518">
-   <polygon points="0,0 2,556 130,888 506,696 826,500 1016,366 1084,232 1012,-66 624,-124 242,-106"/>
-  </object>
+ <objectgroup color="#ff0000" name="Colliders">
   <object id="39" name="Poly" x="521.212" y="1729.45">
    <polygon points="0,0 -100,418.715 90.9091,880.533 266.667,1016 381.818,960.582 684.848,640.388 687.879,369.455"/>
   </object>
   <object id="40" name="Poly" x="540" y="1734">
    <polygon points="0,0 782,-516 1056,-510 1120,-16 680,372"/>
-  </object>
-  <object id="43" name="Poly" x="2182" y="388">
-   <polygon points="0,0 312,0 440,116 568,246 566,696 440,758 320,822 126,824 -198,252"/>
   </object>
   <object id="66" name="Box" x="1858" y="646" width="126" height="376"/>
   <object id="69" name="Box" x="1924" y="1026" width="380" height="250"/>
@@ -142,5 +136,56 @@
    <polygon points="0,0 -186,1 -376,199 124,331"/>
   </object>
   <object id="130" name="Box" x="2822" y="1471.5" width="124" height="193"/>
+  <object id="143" name="Poly" x="2177.33" y="384">
+   <polygon points="0,0 -194.667,256 129.333,830.667 384,830.667 572,701.333 573.333,193.333 442.667,65.3333 317.333,-1.33333"/>
+  </object>
+  <object id="147" name="Poly" x="392" y="514">
+   <polygon points="0,0 -6,568 60,828 124,890 246,892 372,824 502,696 62,-68"/>
+  </object>
+  <object id="149" name="Poly" x="454" y="448">
+   <polygon points="0,0 254,-60 572,-60 1014,68 958,444 438,756"/>
+  </object>
+  <object id="150" name="Poly" x="62" y="316">
+   <polygon points="0,0 260,-192 260,-318 -65.0303,-319.03 -58.9697,2.18182"/>
+  </object>
+  <object id="151" name="Poly" x="57.5758" y="830.303">
+   <polygon points="0,0 133.333,66.6667 130.303,1406.06 0,1663.64 -57.5758,1666.67 -54.5455,0"/>
+  </object>
+  <object id="152" name="Box" x="3.0303" y="318.182" width="54.5455" height="512.121"/>
+  <object id="162" name="Poly" x="2630" y="2">
+   <polygon points="0,0 -2,182 128,252 190,0"/>
+  </object>
+  <object id="163" name="Poly" x="2824" y="2">
+   <polygon points="0,0 -64,254 250,572 376,573.758"/>
+  </object>
+  <object id="165" name="Poly" x="3140" y="580">
+   <polygon points="0,0 -2,124 -72,192 -68,444 58,442 58,0"/>
+  </object>
+  <object id="166" name="Poly" x="3198" y="1030">
+   <polygon points="0,0 -60,0 -62,252 -126,318 -122,824 0,822"/>
+  </object>
+  <object id="167" name="Poly" x="3136" y="2690">
+   <polygon points="0,0 -258,322 -254,514 58,504"/>
+  </object>
+  <object id="168" name="Box" x="3138" y="1856" width="70" height="832"/>
+  <object id="170" name="Poly" x="2880" y="3136">
+   <polygon points="0,0 -2,66 -1534,64 -1534,0 -958,0 -894,-64 -452,-64 -386,-2"/>
+  </object>
+  <object id="174" name="Poly" x="1344" y="3072">
+   <polygon points="0,0 -192,0 -258,66 -766,66 -766,130 -4,126"/>
+  </object>
+  <object id="175" name="Poly" x="576" y="3074">
+   <polygon points="0,0 -258,-64 -572.97,126 -0.242424,126"/>
+  </object>
+  <object id="176" name="Poly" x="315.152" y="3012.12">
+   <polygon points="0,0 -127.273,-66.6667 -318.182,-63.6364"/>
+  </object>
+  <object id="178" name="Poly" x="60.6061" y="2503.03">
+   <polygon points="0,0 3.0303,181.818 66.6667,251.515 63.6364,436.364 -60.6061,442.424 -54.5455,6.06061"/>
+  </object>
+  <object id="184" name="Poly" x="324" y="0">
+   <polygon points="0,0 -1,128 764,127.5 828,64 827.5,0.5"/>
+  </object>
+  <object id="185" name="Box" x="1154.67" y="1.33333" width="1472" height="64"/>
  </objectgroup>
 </map>
