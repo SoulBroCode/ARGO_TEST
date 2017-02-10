@@ -78,7 +78,13 @@
   <object id="87" x="301.212" y="1189.09" width="40" height="40"/>
   <object id="88" x="267.879" y="876.97" width="40" height="40"/>
   <object id="89" x="576.97" y="246.667" width="40" height="40"/>
-  <object id="90" x="270.909" y="464.848" width="40" height="40"/>
+  <object id="90" x="270.909" y="464.848" width="40" height="40">
+   <properties>
+    <property name="connection" value="[1,10]"/>
+    <property name="hello" value="d"/>
+    <property name="id" type="int" value="0"/>
+   </properties>
+  </object>
   <object id="91" x="952.727" y="210.303" width="40" height="40"/>
   <object id="92" x="1428.48" y="216.364" width="40" height="40"/>
   <object id="93" x="1601.21" y="470.909" width="40" height="40"/>
