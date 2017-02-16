@@ -1,0 +1,10 @@
+﻿  GraphNode.cpp
+c:\users\linh\desktop\test\test\graphnode.cpp(4): error C2653: 'GraphNode': is not a class or namespace name
+c:\users\linh\desktop\test\test\graphnode.cpp(4): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+c:\users\linh\desktop\test\test\graphnode.cpp(8): error C2039: 'vector': is not a member of 'std'
+  c:\users\linh\desktop\test\test\predefined c++ types (compiler internal)(208): note: see declaration of 'std'
+c:\users\linh\desktop\test\test\graphnode.cpp(8): error C2065: 'vector': undeclared identifier
+c:\users\linh\desktop\test\test\graphnode.cpp(8): error C2065: 'GraphArc': undeclared identifier
+c:\users\linh\desktop\test\test\graphnode.cpp(8): error C2059: syntax error: ')'
+c:\users\linh\desktop\test\test\graphnode.cpp(8): error C2612: trailing ')' illegal in base/member initializer list
+c:\users\linh\desktop\test\test\graphnode.cpp(95): fatal error C1004: unexpected end-of-file found
